@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
-Route::get('/api/dashboard/get-path', [\App\Http\Controllers\DashboardController::class, 'getPath'])->name('dashboard.get-path');
+Route::get('/ajax/native/dialog', [\App\Http\Controllers\NativeController::class, 'dialog'])->name('native.dialog');
 
