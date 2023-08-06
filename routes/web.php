@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 Route::get('/ajax/native/dialog', [\App\Http\Controllers\NativeController::class, 'dialog'])->name('native.dialog');
-
+Route::post('/ajax/native/clipboard', [\App\Http\Controllers\NativeController::class, 'clipboard'])->name('native.clipboard');
